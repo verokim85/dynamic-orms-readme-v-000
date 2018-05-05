@@ -24,6 +24,7 @@ class Song
 
   self.column_names.each do |col_name|
     attr_accessor col_name.to_sym
+    binding.pry
   end
 
   def initialize(options={})
@@ -60,6 +61,3 @@ class Song
   end
 
 end
-
-
-
